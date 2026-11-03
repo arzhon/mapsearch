@@ -7,7 +7,7 @@ MAPS_FOLDERS = []
 and then run the script from the terminal using 
 python mapsearch.py index
 
-Once the index is finished, the duration will be based on the size of the map library. For my own library, it took around 30 min for a library of 10k image files using a MacBook Pro M1 Pro processor. The Python script should be system-agnostic. I initially programmed it to use the M1 processor for the computing, but it should now be usable in Linux and Windows, using Nvidia GPU processing on those systems.
+The script will download the CLIP model from HuggingFace, and then start constructing the library. The duration will be based on the size of the map library. For my own library, it took around 30 min for a library of 10k image files using a MacBook Pro M1 Pro processor. The Python script should be system-agnostic. I initially programmed it to use the M1 processor for the computing, but it should now be usable in Linux and Windows, using Nvidia GPU processing on those systems.
 
 After the index is finished, the search engine can be called by using
 python mapsearch.py serve
